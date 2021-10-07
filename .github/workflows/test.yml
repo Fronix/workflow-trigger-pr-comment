@@ -7,6 +7,5 @@ jobs:
  job01:
    runs-on: [ubuntu-latest]
    steps:
-     - name: printthings
-       run: |
-         echo ${{ github.event }}
+    - name: Debug action
+      uses: hmarr/debug-action@v2.0.0
