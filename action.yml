@@ -1,0 +1,12 @@
+name: 'Workflow trigger pr comment'
+description: 'Trigger workflows in PRs with a comment'
+inputs:
+  trigger:
+    description: 'Word that triggers worksflow in PR'
+    required: true
+outputs:
+  branch:
+    description: 'The branch you want to run the workflow for'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

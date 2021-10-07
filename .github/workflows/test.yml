@@ -1,0 +1,12 @@
+name: pull request comment
+on:
+  pull_request_target:                                     
+    types: [edited]
+
+jobs:
+ job01:
+   runs-on: [ubuntu-latest]
+   steps:
+     - name: printthings
+       run: |
+         echo ${{ github.event }}
