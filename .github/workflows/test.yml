@@ -1,7 +1,7 @@
 name: pull request comment
 on:
-  pull_request_target:                                     
-    types: [edited]
+  issue_comment:                                     
+    types: [created]
 
 jobs:
  job01:
